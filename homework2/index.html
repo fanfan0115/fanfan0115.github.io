@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script>
+        function fxy1(x){
+            x.src="images/scone_info.jpg";
+        }
+        function f1(x){
+            x.src="images/scone.jpg";
+        }
+        function fxy2(x){
+            x.src="images/biscotti_info.jpg";
+        }
+        function f2(x){
+            x.src="images/biscotti.jpg";
+        }
+        function fxy3(x){
+            x.src="images/coffee_info.jpg";
+        }
+        function f3(x){
+            x.src="images/coffee.jpg";
+        }
+        function fxy4(x){
+            x.src="images/cappuccino_info.jpg";
+        }
+        function f4(x){
+            x.src="images/cappuccino.jpg";
+        }
+        function fxy5(x){
+            x.src="images/latte_info.jpg";
+        }
+        function f5(x){
+            x.src="images/latte.jpg";
+        }
+        function fxy6(x){
+            x.src="images/espresso_info.jpg";
+        }
+        function f6(x){
+            x.src="images/espresso.jpg";
+        }
+    </script>
+    <script src="cafe.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul>
+            		<li><a href="#"><img onmouseover="fxy6(this)" onmouseout="f6(this)" id="FXY1"  src="images/espresso.jpg" alt="espresso"/></a></li>
+            		<li><a href="#"><img onmouseover="fxy5(this)" onmouseout="f5(this)" id="FXY2"  src="images/latte.jpg" alt="latte"/></a></li>
+            		<li><a href="#"><img onmouseover="fxy4(this)" onmouseout="f4(this)" id="FXY3"  src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
+            		<li><a href="#"><img  onmouseover="fxy3(this)" onmouseout="f3(this)" id="FXY4"  src="images/coffee.jpg" alt="coffee"/></a></li>
+            		<li><a href="#"><img  onmouseover="fxy2(this)" onmouseout="f2(this)" id="FXY5"  src="images/biscotti.jpg" alt="biscotti"/></a></li>
+            		<li><a href="#"><img  onmouseover="fxy1(this)" onmouseout="f1(this)" id="FXY6"  src="images/scone.jpg" alt="scone"/></a></li>
+            	</ul>
+            </section>
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+            		</select>
+            		<p id="total"></p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="submit" name="place_order" id="place_order" value="Place Order">
+           			<input type="reset" name="clear_order" id="clear_order" value="Clear Order">				       		
+            	</section>
+            </section>   
+        </form>
+    </main> 
+</body>
+</html>
